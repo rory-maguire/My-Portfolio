@@ -1,0 +1,81 @@
+.homeSection {
+	background-image: url("../LandingPage/portfolio-bg-img.JPEG");
+	box-shadow: inset 0 0 0 100em rgba(22, 26, 29, 0.8);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.textAnimation {
+	animation-name: header;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+.textAnimation2 {
+	animation-name: header;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes header {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.mainHeader {
+	font-size: 4em;
+}
+
+.portfolioBtn {
+	background: none;
+	border: 1px solid #fff !important;
+	padding: 10px 20px;
+	color: white;
+	font-size: 14px;
+	letter-spacing: 2px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.portfolioBtn:hover,
+.portfolioBtn:active,
+.portfolioBtn:focus {
+	background: #fff;
+	color: black;
+}
+
+.buttonList {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+
+.btn {
+	border: 1px solid white;
+	height: 1em;
+	width: 1em;
+	margin: 0.1em;
+}
+
+.linkedInIcon,
+.githubIcon {
+	color: white;
+}

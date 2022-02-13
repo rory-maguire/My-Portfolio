@@ -1,0 +1,18 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	--charcoal: #222222;
+	--white: #ffffff;
+	--maincolor: #161a1d;
+}
+
+.app {
+	text-align: center;
+	background-color: var(--maincolor);
+	color: #ffff;
+	min-height: 100%;
+	font-family: "Hind Siliguri", sans-serif;
+	border: 1px solid transparent;
+}

@@ -1,0 +1,52 @@
+.container {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.buttonList {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	font-size: 12em;
+	/* margin: 3em; */
+}
+
+.btn {
+	border: 1px solid white;
+	height: 1em;
+	width: 1em;
+	margin: 0.1em;
+}
+
+.linkedInIcon,
+.githubIcon {
+	color: white;
+}
+
+.text {
+	line-height: 2em;
+	font-size: 1.5em;
+}
+
+.titlesec {
+	height: 25vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	transition: opacity 500ms ease-in-out;
+	opacity: 0;
+	font-size: 3em;
+	width: 30em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title.appear {
+	opacity: 1;
+}

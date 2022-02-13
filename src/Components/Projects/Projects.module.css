@@ -1,0 +1,43 @@
+.projectsSection {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	overflow-x: hidden;
+	/* border: 1px solid white; */
+	padding: 1em;
+}
+.titlesec {
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* border: 1px solid white; */
+}
+
+.title {
+	transition: opacity 500ms ease-in-out;
+	opacity: 0;
+	font-size: 3em;
+	width: 30em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title.appear {
+	opacity: 1;
+}
+
+.header {
+	color: white;
+	background-color: #161a1d;
+}
+
+.projectsContainer {
+	height: 80vh;
+	width: 80vw;
+	border: 2px solid white;
+	overflow: scroll;
+	background-color: #222222;
+}

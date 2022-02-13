@@ -1,0 +1,72 @@
+.projectComponent {
+	/* border: solid 2px green; */
+	display: flex;
+	height: 30em;
+	margin: 3em;
+	transform: translate(0, -5em);
+}
+
+.vid {
+	display: flex;
+	flex-direction: column;
+	width: 50em;
+	align-items: center;
+	justify-content: center;
+	transition: transform 400ms ease-in;
+	transform: translateX(100%);
+}
+
+.text {
+	font-size: 1.2em;
+	line-height: 2em;
+	width: 50em;
+	display: flex;
+	padding: 1em;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 1em;
+	transition: transform 400ms ease-in;
+	transform: translateX(-100%);
+}
+
+.text.appear,
+.vid.appear {
+	transform: translateX(0);
+}
+
+.list {
+	list-style-type: none;
+}
+
+.links {
+	width: 10em;
+	display: flex;
+	justify-content: space-around;
+}
+
+.site {
+	color: white;
+	/* text-decoration: none; */
+	font-weight: 1000;
+}
+
+.gh,
+.site {
+	color: white;
+	border: 1px solid #fff;
+	font-weight: 1000;
+	text-decoration: none;
+	padding: 0.2em;
+	margin: 1em, 3em;
+}
+
+.gh:hover,
+.gh:active,
+.gh:focus,
+.site:hover,
+.site:active,
+.site:focus {
+	background: #fff;
+	color: black;
+}

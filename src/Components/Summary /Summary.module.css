@@ -1,0 +1,29 @@
+.sectionContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	list-style-type: none;
+	height: 100vh;
+}
+
+.titlesec {
+	height: 25vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	transition: opacity 500ms ease-in-out;
+	opacity: 0;
+	font-size: 3em;
+	width: 30em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title.appear {
+	opacity: 1;
+}
