@@ -11,6 +11,7 @@ import nodelogo from "./logos/node logo.png";
 import postgreslogo from "./logos/postgres logo.png";
 import reactlogo from "./logos/react logo .png";
 import stacklogo from "./logos/stack logo .svg";
+import tslogo from "./logos/ts logo.svg";
 
 import { useInView } from "react-intersection-observer";
 function Summary() {
@@ -25,7 +26,7 @@ function Summary() {
 						isTitleVisible ? SummaryCSS.appear : ""
 					}`}
 				>
-					Professional Summary TYPESCRIPT
+					Professional Summary
 				</h1>
 			</div>
 
@@ -48,6 +49,7 @@ function Summary() {
 					htmllogo={htmllogo}
 					jslogo={jslogo}
 					nextlogo={nextlogo}
+					tslogo={tslogo}
 					nodelogo={nodelogo}
 					postgreslogo={postgreslogo}
 					reactlogo={reactlogo}

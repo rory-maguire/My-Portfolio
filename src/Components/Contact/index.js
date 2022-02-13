@@ -29,12 +29,14 @@ function Contact({ linkedInLink, githubLink }) {
 				<div className={CSS.text}>
 					<h3>Contact Me</h3>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non
-						ullamcorper ipsum. Maecenas pellentesque vehicula massa id
-						condimentum. Donec cursus ultricies tempor. Nulla laoreet tortor sed
-						dolor suscipit, blandit dignissim mauris auctor. Nunc sapien felis,
-						fermentum nec nulla tempor, luctus sagittis est.
+						Thank you very much for taking the time to look through my portfolio
+						page, I really appreciate it.
 					</p>
+					<p>
+						Please contact me using the email address below or via LinkedIn.
+					</p>
+
+					<p>Email: rorymaguire00@gmail.com</p>
 				</div>
 			</div>
 		</>

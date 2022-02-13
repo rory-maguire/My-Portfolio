@@ -23,7 +23,7 @@
 	width: 50em;
 	align-items: center;
 	justify-content: center;
-	transition: transform 400ms ease-in;
+	transition: transform 600ms ease-in;
 	transform: translateX(-100%);
 }
 .text {
@@ -35,7 +35,7 @@
 	align-items: center;
 	flex-direction: column;
 	margin: 1em;
-	transition: transform 400ms ease-in;
+	transition: transform 600ms ease-in;
 	transform: translateX(100%);
 }
 

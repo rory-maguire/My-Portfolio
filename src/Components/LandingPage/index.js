@@ -15,7 +15,6 @@ function LandingPage({
 				<h1>{headerText}</h1>
 				<div className={LandingPageCSS.animateDiv}>
 					<h3 className={LandingPageCSS.textAnimation}>{subHeaderText}</h3>
-					<h3 className={LandingPageCSS.textAnimation2}>{subHeaderText2}</h3>
 				</div>
 				<a href="http://facebook.com">
 					<ul className={LandingPageCSS.buttonList}>

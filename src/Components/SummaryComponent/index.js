@@ -13,6 +13,7 @@ function SummaryComponent({
 	ghlogo,
 	htmllogo,
 	jslogo,
+	tslogo,
 	nextlogo,
 	nodelogo,
 	postgreslogo,
@@ -53,6 +54,9 @@ function SummaryComponent({
 
 				<div>
 					<img src={jslogo} height="70em"></img>
+				</div>
+				<div>
+					<img src={tslogo} height="70em"></img>
 				</div>
 
 				<div>

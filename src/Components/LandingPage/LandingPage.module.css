@@ -10,33 +10,47 @@
 	align-items: center;
 }
 
-.textAnimation {
-	animation-name: header;
-	animation-duration: 8s;
-	animation-iteration-count: infinite;
-}
-.textAnimation2 {
-	animation-name: header;
+.textAnimation:before {
+	content: "Software Engineer";
+	font-size: 100%;
+	animation-name: head;
 	animation-duration: 8s;
 	animation-iteration-count: infinite;
 }
 
-@keyframes header {
+@keyframes head {
 	0% {
-		opacity: 1;
+		font-size: 100%;
+		opacity: 0;
 	}
 	25% {
+		font-size: 100%;
 		opacity: 0;
 	}
 	50% {
+		font-size: 100%;
+		opacity: 1;
+		content: "Web Developer";
+	}
+	65% {
+		font-size: 100%;
 		opacity: 0;
 	}
-
 	75% {
+		font-size: 100%;
 		opacity: 0;
+	}
+	85% {
+		font-size: 100%;
+		opacity: 1;
+	}
+	95% {
+		font-size: 100%;
+		opacity: 1;
 	}
 	100% {
-		opacity: 1;
+		font-size: 100%;
+		opacity: 0;
 	}
 }
 

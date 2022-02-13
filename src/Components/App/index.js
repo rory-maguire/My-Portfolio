@@ -14,8 +14,7 @@ function App() {
 			<div className={AppCSS.app}>
 				<LandingPage
 					headerText={"Rory Maguire"}
-					subHeaderText={"Software Engineer"}
-					subHeaderText2={"Web Developer"}
+					subHeaderText={""}
 					portfolioLink={"#projects"}
 					githubLink={"https://github.com/rory-maguire"}
 					linkedInLink={"https://www.linkedin.com/in/rory-maguire-4522aa157/"}
