@@ -6,6 +6,7 @@ function ProjectComponent2({ src, header, subHeader, text, ghLink, siteLink }) {
 	const { ref: projectComponent, inView: isVisibile } = useInView({
 		threshold: 0.7,
 	});
+
 	return (
 		<div className={ComponentCSS.projectComponent} ref={projectComponent}>
 			<div
@@ -31,17 +32,12 @@ function ProjectComponent2({ src, header, subHeader, text, ghLink, siteLink }) {
 						</a>
 					</div>
 				</div>
-				<div>
-					<ul className={ComponentCSS.list}>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</div>
+
 				<div>
 					<p>{text}</p>
 				</div>
 			</div>
+
 			<div
 				className={`${ComponentCSS.vid} ${
 					isVisibile ? ComponentCSS.appear : ""

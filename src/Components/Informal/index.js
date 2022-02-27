@@ -1,5 +1,6 @@
 import React from "react";
 import MiscCss from "./Misc.module.css";
+import talkingme from "./talking me demo .mp4";
 
 import { useInView } from "react-intersection-observer";
 
@@ -27,7 +28,7 @@ function Informal() {
 						height="90%"
 						onMouseEnter={(e) => e.currentTarget.play()}
 						onMouseOut={(e) => e.currentTarget.pause()}
-						src=""
+						src={talkingme}
 						type="video/mp4"
 						muted
 						loop

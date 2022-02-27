@@ -19,6 +19,8 @@ function SummaryComponent({
 	postgreslogo,
 	reactlogo,
 	stacklogo,
+	netlifylogo,
+	herokulogo,
 }) {
 	const { ref: summaryComponent, inView: isVisible } = useInView({
 		threshold: 0.9,
@@ -81,6 +83,12 @@ function SummaryComponent({
 
 				<div>
 					<img src={expresslogo} height="70em"></img>
+				</div>
+				<div>
+					<img src={netlifylogo} height="70em"></img>
+				</div>
+				<div>
+					<img src={herokulogo} height="70em"></img>
 				</div>
 
 				<div>
