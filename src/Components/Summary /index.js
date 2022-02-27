@@ -12,6 +12,8 @@ import postgreslogo from "./logos/postgres logo.png";
 import reactlogo from "./logos/react logo .png";
 import stacklogo from "./logos/stack logo .svg";
 import tslogo from "./logos/ts logo.svg";
+import netlifylogo from "./logos/netlifylogo.png";
+import herokulogo from "./logos/heroku logo .png";
 
 import { useInView } from "react-intersection-observer";
 function Summary() {
@@ -54,6 +56,8 @@ function Summary() {
 					postgreslogo={postgreslogo}
 					reactlogo={reactlogo}
 					stacklogo={stacklogo}
+					netlifylogo={netlifylogo}
+					herokulogo={herokulogo}
 				/>
 			</div>
 		</div>

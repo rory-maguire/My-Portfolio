@@ -70,3 +70,20 @@
 	background: #fff;
 	color: black;
 }
+
+.btn {
+	color: white;
+	background: none;
+	border: 1px solid #fff;
+	font-weight: 1000;
+	text-decoration: none;
+	padding: 0.2em;
+	margin: 1em, 3em;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+	background: #fff;
+	color: black;
+}

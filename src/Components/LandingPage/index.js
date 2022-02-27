@@ -4,7 +4,6 @@ import LandingPageCSS from "./LandingPage.module.css";
 function LandingPage({
 	headerText,
 	subHeaderText,
-	subHeaderText2,
 	linkedInLink,
 	githubLink,
 	portfolioLink,
@@ -12,7 +11,7 @@ function LandingPage({
 	return (
 		<div className={LandingPageCSS.homeSection}>
 			<div className={LandingPageCSS.mainHeader}>
-				<h1>{headerText}</h1>
+				<h1 className={LandingPageCSS.title}>{headerText}</h1>
 				<div className={LandingPageCSS.animateDiv}>
 					<h3 className={LandingPageCSS.textAnimation}>{subHeaderText}</h3>
 				</div>
