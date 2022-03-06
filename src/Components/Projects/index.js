@@ -3,7 +3,6 @@ import ProjectComponent from "../ProjectComponent/index.js";
 import ProjectsCSS from "./Projects.module.css";
 import ProjectComponent2 from "../ProjectComponent2/index";
 import { useInView } from "react-intersection-observer";
-import dummyvid from "./loading.mp4";
 
 function Projects() {
 	const { ref: title, inView: isTitleVisible } = useInView({
@@ -21,105 +20,76 @@ function Projects() {
 				</h1>
 			</div>
 			<div className={ProjectsCSS.projectsSection} id="projects">
-				{/* <ProjectComponent
+				<ProjectComponent
 					src={
-						"https://dl.dropboxusercontent.com/s/ylcnj50yodko6r6/app-demo.mp4?dl=0"
+						"https://dl.dropboxusercontent.com/s/o05o98mpe43audn/Screen%20Recording%202022-03-06%20at%2014.35.29.mov?dl=0"
+					}
+					header={"Bootcamp Final Project - iGive"}
+					subHeader={
+						"An app currently in progress, which aims to reduce wastage by allowing people to donate items to others in their local area."
+					}
+					text={
+						"Items are listed by users which are stored in our Postgres database.These items are then displayed on a dashboard for others to see and express interest in. We used Next JS as our front-end framework to make use of special data fetching methods (SSR). This was paired with Auth0 to allow us to conditionally render which users can see and do certain things such as edit and delete, or for example show their manually uploaded profile picture rather than the default user.picture returned from Auth0. We made use of dynamic routing (SSG) for reusability of html templates for user profile pages. In our Express server-side code, we used Cloudinary API to handle image uploading capabilities. We are very excited to finish this application and the team and I have had a really fun time so far! If we have time we'd love to migrate to firebase to allow for realtime messaging. We'd also love to implement some kind of mapping or geolocation capabilities."
+					}
+					ghLink={
+						"https://github.com/SchoolOfCode/final-project-front-end-it-crowd-room-27"
+					}
+					siteLink={"#"}
+				/>
+				<ProjectComponent2
+					src={
+						"https://dl.dropboxusercontent.com/s/ozm8caru4ah48a4/app-demo.mp4?dl=0"
 					}
 					header={"Mid-Bootcamp Project Week "}
 					subHeader={
-						"An app created using React Mauris quis quam lorem. Donec euismod nisi ac est aliquam ultrices."
+						"An app created with the PERN stack which aims to connect fellow bootcampers in an informal way"
 					}
-					text={`Halfway through the bootcamp, we were put into groups of people we had never met before and set the task of creating an application that solves a problem that a School of Code Bootcamper may face. My team and I, after a fair amount of research decided to try and solve this: "the cohort is large and we are all remote, so it is difficult to get to know fellow bootcampers in an informal way". After a day of ideation on the problem, we came up with our first wireframe mock-ups. The application allows bootcampers to fill out informal things about themselves (music taste, favourite films etc.) and add themselves to the network. `}
-					ghLink={"#"}
-					siteLink={"#"}
-				/> */}
-
+					text={
+						"Halfway through the bootcamp we had project week. At the start of this week I met my teammates (who I'd never seen before), and at the end of the week our project would culminate in presenting to a panel of judges from industry. On monday we brainstormed intensly as a group, using 'dreamer, realist and critic' ideation methods to refine our ideas. Our application would allow uses to create a profile and be added to a network of other bootcampers. This app takes user input, posts it to our API request handlers in Express where it is then sent off to our PostgreSQL database. On the client side, we then map through this data and generate a card 'profile' component for each user. It also uses React bootstrap modals and React router. This was a thoroughly enjoyable week - We are working on image uploading features and authentication! "
+					}
+					ghLink={
+						"https://github.com/SchoolOfCode/national-project-week-farc-incorporated"
+					}
+					siteLink={"https://priceless-poitras-7226c6.netlify.app/"}
+				/>
+				<ProjectComponent2
+					src={
+						"https://dl.dropboxusercontent.com/s/4hmxk9nxm7wxk13/todo%20demo.mov?dl=0"
+					}
+					header={"React To-Do list"}
+					subHeader={
+						"A very simple to-do list application practicing the basics of React"
+					}
+					text={
+						"One of the very first projects we built using react which practices using the fundamentals of React. We had learned the importance of immutability in React and best practices to maintain this, such as using the spread [...] operator, using arr.slice() and so on - styled using bootstrap."
+					}
+					ghLink={"https://github.com/SchoolOfCode/w7d4_react-hackathon-c-a-r"}
+				/>
 				<ProjectComponent
 					src={
-						"https://dl.dropboxusercontent.com/s/ylcnj50yodko6r6/app-demo.mp4?dl=0"
+						"https://dl.dropboxusercontent.com/s/biqyttrihzf469g/xMAS%20app%20normal.mov?dl=0"
 					}
-					header={"Mid-Bootcamp Project Week "}
+					header={"Rory's Records Catalogue"}
 					subHeader={
-						"An app created using React Mauris quis quam lorem. Donec euismod nisi ac est aliquam ultrices."
+						"PERN stack application to help me stay on top of my record collection"
 					}
 					text={
-						"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida dolor at justo maximus, ac vehicula massa mattis. Etiam non ullamcorper tellus. Nunc scelerisque, massa ac lobortis scelerisque, nisi justo efficitur ante, eget consectetur velit mauris sed mauris. Fusce pellentesque eu velit nec commodo. Nam tincidunt odio et elit rutrum, imperdiet malesuada enim lobortis. Praesent nunc erat, ultricies a lectus laoreet, faucibus tempor eros. Fusce nec dictum nisl, ut facilisis neque. Vivamus eget efficitur leo. Morbi quis tortor a urna gravida suscipit. Etiam vitae lorem eu neque semper facilisis ac ut ante. Cras a placerat leo. Nunc commodo augue et enim cursus iaculis. Morbi tincidunt lacus a diam blandit, ut scelerisque ipsum tristique. Pellentesque enim lacus, elementum nec semper quis, tempor eget enim."
+						"This was my first ever full-stack application. Knowing we'd be covering react on the course, I'd dipped my toes in the water by building this PERN stack app. As a keen record collector I need to have a better sense visually of which records I own and whether I've recorded them into digital format or not. It's also cool to see my favourites!"
 					}
-					ghLink={"#"}
-					siteLink={"#"}
-				/>
-				{/* <ProjectComponent2
-					src=""
-					header={"My Portfolio Page"}
-					subHeader={
-						"A page which showcases myself both as an aspiring software developer but also "
-					}
-					text={
-						"This application, the one you are using right now, was built in React. I wanted to keep the design clean and simple, so as not to overwhelm the user/reader with information. I used the Intersection Observer API which helps me to handle scroll events and make the page more interactive. This was tricky, because the API wasn't built for react usage, I ended up using a really handy npm package called react-intersection-observer to help achieve the same functionality. I wanted the page to showcase myself both as an aspiring junior developer, but also myself in an informal way, so that the user can understand what I'm about as best as possible. I had a lot of fun making this application and I hope you enjoy interacting with it."
-					}
-					ghLink={"#"}
-					siteLink={"#"}
-				/> */}
-
-				<ProjectComponent2
-					src={dummyvid}
-					header={"New Project Goes New project text goes here"}
-					subHeader={
-						"New project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes here"
-					}
-					text={
-						"New project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes here"
-					}
-					ghLink={"#"}
-					siteLink={"#"}
-				/>
-				<ProjectComponent
-					src={dummyvid}
-					header={"New Project Goes New project text goes here"}
-					subHeader={
-						"New project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes here"
-					}
-					text={
-						"New project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes here"
-					}
-					ghLink={"#"}
-					siteLink={"#"}
+					ghLink={"https://github.com/rory-maguire/xmas-break-project"}
 				/>
 				<ProjectComponent2
-					src={dummyvid}
-					header={"New Project Goes New project text goes here"}
-					subHeader={
-						"New project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes here"
+					src={
+						"https://dl.dropboxusercontent.com/s/5q5wqjfisiw2mk4/calculator%20demo%20.mov?dl=0"
 					}
+					header={"Vanilla Javascript Calculator"}
+					subHeader={"A simple calculator using vanilla javascript"}
 					text={
-						"New project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes here"
+						"A simple calculator which takes the html buttons and makes them iterable by using Array.from(), maps through the buttons adding an event listener to each of them, uses a switch statement depending on what the calculator display reads and uses eval() to read the innertext value of this display for calculations"
 					}
-					ghLink={"#"}
-					siteLink={"#"}
-				/>
-				<ProjectComponent
-					src={dummyvid}
-					header={"New Project Goes New project text goes here"}
-					subHeader={
-						"New project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes here"
+					ghLink={
+						"https://github.com/rory-maguire/Vanilla-Javascript-Calculator"
 					}
-					text={
-						"New project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes here"
-					}
-					ghLink={"#"}
-					siteLink={"#"}
-				/>
-				<ProjectComponent2
-					src={dummyvid}
-					header={"New Project Goes New project text goes here"}
-					subHeader={
-						"New project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes here"
-					}
-					text={
-						"New project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes hereNew project text goes here"
-					}
-					ghLink={"#"}
-					siteLink={"#"}
 				/>
 			</div>
 		</>

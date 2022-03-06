@@ -40,13 +40,13 @@ function ProjectComponent({ src, header, subHeader, text, ghLink, siteLink }) {
 				</div>
 				<div className={ComponentCSS.links}>
 					<div>
-						<a href={ghLink} className={ComponentCSS.site}>
-							Site
+						<a href={ghLink} className={ComponentCSS.site} target="_blank">
+							GitHub
 						</a>
 					</div>
 					<div>
-						<a href={siteLink} className={ComponentCSS.gh}>
-							GitHub
+						<a href={siteLink} className={ComponentCSS.gh} target="_blank">
+							Site
 						</a>
 					</div>
 				</div>
