@@ -2,7 +2,8 @@
 	overflow: hidden;
 	display: flex;
 	background: none;
-	/* box-shadow: 0px 200px 12px, black; */
+	/* border-bottom: 3px black solid; */
+	background-color: #13171a;
 	justify-content: center;
 	align-items: center;
 	height: 3em;

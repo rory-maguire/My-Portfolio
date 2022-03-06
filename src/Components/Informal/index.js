@@ -1,6 +1,5 @@
 import React from "react";
 import MiscCss from "./Misc.module.css";
-import talkingme from "./talking me demo .mp4";
 
 import { useInView } from "react-intersection-observer";
 
@@ -25,29 +24,23 @@ function Informal() {
 					<video
 						className="clip"
 						width="90%"
+						src={
+							"https://dl.dropboxusercontent.com/s/clp9e1yrvvx1an0/My%20Movie%203.mov?dl=0"
+						}
 						height="90%"
 						onMouseEnter={(e) => e.currentTarget.play()}
 						onMouseOut={(e) => e.currentTarget.pause()}
-						src={talkingme}
 						type="video/mp4"
-						muted
 						loop
 					></video>
 				</div>
 				<div className={`${MiscCss.text} ${isVisible ? MiscCss.slideIn : ""}`}>
 					<img></img>
-					<h3>Title</h3>
+					<h3>Some of my passions and interests</h3>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et
-						sem odio. Curabitur libero tortor, tincidunt et nunc a, luctus
-						auctor lacus. Mauris auctor nisi a nulla sodales ornare. Quisque in
-						molestie nunc. Aliquam fermentum tempor sem, sed consequat neque
-						congue sit amet. Vivamus congue blandit pellentesque. Pellentesque
-						vitae ullamcorper dolor. Integer tempor nunc id nulla viverra
-						blandit. Phasellus sed efficitur nisl, viverra condimentum turpis.
-						Nam a maximus orci. Vestibulum tincidunt congue rhoncus. Morbi at
-						nunc non purus facilisis molestie. Ut euismod arcu eu massa aliquam
-						consequat.
+						First of all thanks for visiting my page - here is a more fun video
+						I made if you were interested in any of my passions and interests or
+						my more informal side. Thanks for watching.
 					</p>
 				</div>
 			</div>

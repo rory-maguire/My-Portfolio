@@ -21,6 +21,7 @@ function SummaryComponent({
 	stacklogo,
 	netlifylogo,
 	herokulogo,
+	jestlogo,
 }) {
 	const { ref: summaryComponent, inView: isVisible } = useInView({
 		threshold: 0.9,
@@ -35,7 +36,7 @@ function SummaryComponent({
 				ref={summaryComponent}
 			>
 				<h2>{header}</h2>
-				<h3>{subHeader}</h3>
+				<p>{subHeader}</p>
 				<ul className={SummaryComponentCSS.list}>
 					<li>{li1}</li>
 					<li>{li2}</li>
@@ -93,6 +94,9 @@ function SummaryComponent({
 
 				<div>
 					<img src={stacklogo} height="70em"></img>
+				</div>
+				<div>
+					<img src={jestlogo} height="70em"></img>
 				</div>
 			</div>
 		</div>

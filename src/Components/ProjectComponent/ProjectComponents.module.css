@@ -1,7 +1,7 @@
 .projectComponent {
 	/* border: solid 2px green; */
 	display: flex;
-	height: 30em;
+	height: 40em;
 	margin: 3em;
 	transform: translate(0, -5em);
 }
@@ -33,6 +33,15 @@
 .text.appear,
 .vid.appear {
 	transform: translateX(0);
+}
+
+.text.appear {
+	margin-right: 3em;
+	margin-left: 0;
+}
+.vid.appear {
+	margin-left: 2em;
+	margin-right: 0;
 }
 
 .list {

@@ -36,6 +36,10 @@ function LandingPage({
 						<button className={LandingPageCSS.portfolioBtn}>Projects</button>
 					</a>
 				</a>
+				<p className={LandingPageCSS.pleaseNote}>
+					Please note that this page is not yet mobile responsive, work on this
+					page is ongoing, apologies...
+				</p>
 			</div>
 		</div>
 	);

@@ -14,7 +14,7 @@ import stacklogo from "./logos/stack logo .svg";
 import tslogo from "./logos/ts logo.svg";
 import netlifylogo from "./logos/netlifylogo.png";
 import herokulogo from "./logos/heroku logo .png";
-
+import jestlogo from "./logos/jest logo .png";
 import { useInView } from "react-intersection-observer";
 function Summary() {
 	const { ref: title, inView: isTitleVisible } = useInView({
@@ -36,14 +36,7 @@ function Summary() {
 				<SummaryComponent
 					header={"Professional Summary"}
 					subHeader={
-						"Aliquam ut magna et massa iaculis faucibus vel ut nibh. Aliquam eget varius metus, quis ornare erat. Quisque vitae metus tincidunt,"
-					}
-					li1={
-						"in, egestas id ante. Donec interdum lorem id nunc hendrerit, ut laoreet odio ultrices."
-					}
-					li2={"Sed maximus sit amet dui id facilisis. Vestibulum vel miest."}
-					li3={
-						"Donec semper diam vitae accumsan consectetur. Proin aliquet mauri eget neque gravida, vitae"
+						"I am an inquisitive software developer who recently participated in the School of Code software development bootcamp. The bootcamp has given me a comprehensive grounding in full-stack software engineering - In addition to technical skills, the bootcamp has helped foster a wide range of invaluable soft skills, which are vital in the real world and I believe will allow me to be an asset to any team. Working with like-minded problem solvers in a collaborative environment is where I feel most engaged and inspired. I am eager to learn more, and would cherish the opportunity to further my growth in a professional environment. I am particularly drawn to software development as it is a place where creativity and logic intersects - I am constantly striving to break down problems algorithmically, however it's awesome to use my creative side. I believe the bootcamp has allowed me to grow into a truly well-rounded full stack software developer."
 					}
 					csslogo={csslogo}
 					expresslogo={expresslogo}
@@ -58,6 +51,7 @@ function Summary() {
 					stacklogo={stacklogo}
 					netlifylogo={netlifylogo}
 					herokulogo={herokulogo}
+					jestlogo={jestlogo}
 				/>
 			</div>
 		</div>
