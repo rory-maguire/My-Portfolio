@@ -34,7 +34,7 @@ function Projects() {
 					ghLink={
 						"https://github.com/SchoolOfCode/final-project-front-end-it-crowd-room-27"
 					}
-					siteLink={"#"}
+					siteLink={"https://igive.netlify.app/"}
 				/>
 				<ProjectComponent2
 					src={
